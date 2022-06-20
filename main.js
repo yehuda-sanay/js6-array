@@ -22,15 +22,41 @@
 //     console.log(myarray)
 // }
 // getNumbers()
-
-function getNamesAndSeries(){
-    const arrayNames=[];
-    while(arrayNames.length<10){
-        const listname=document.getElementById("names_input")
+// שאלה 4
+// const arrayNames=[];
+// const inputName=document.createElement("input");
+// document.body.appendChild(inputName);
+// function getNamesAndSeries(){
+    
+//     if(arrayNames.length<10){
+//         arrayNames.push(inputName.value);
         
-        arrayNames.push(listname.value);
-    }
-    console.log(arrayNames);
+//     }
+//     arrayNames.sort();
+//     if(arrayNames.length==10){
+//     console.log(arrayNames);
+//     }
+// }
 
-}
-getNamesAndSeries()
+//שאלה 5
+// const numberArray=[];
+// function randomNumber(){
+// for(let i=0;i<10;i++){
+//    let randomnumber= Math.floor(Math.random()*500000);
+//     numberArray.push(randomnumber);
+// }
+// numberArray.sort(((a,b)=> b-a))
+// console.log(numberArray);
+// }
+// randomNumber()
+
+//שאלה 7 
+
+
+const companyArray=["Applied","Argus","Axilion","Biosense","Broadcom","CEVA","Check Point","citi","ConteXtrea","CTERA Networks"];
+function printCompanyName(){
+    for(let i=0; i<10;i++){
+        document.body.innerHTML+=companyArray[i]+"-";
+    }
+ }
+ printCompanyName()
